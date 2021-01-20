@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>TechQuiz|Hub</title>
+  <style>
+      body{
+          margin:0;
+          padding:0;
+          box-sizing: border-box;
+          overflow-x: hidden;
+          background-color:#03A9F4;
+      }
+      html{
+          overflow-x: hidden;
+      }
+        #circle{
+        border-radius:100%;
+        width:100px;
+        height:100px;
+        margin-left:40%;
+        background-color:#024249;  
+        /* background-color:#184d47;*/
+         border:2px solid skyblue;
+         box-shadow:3px 3px 10px skyblue;
+    }
+    #top{
+        color:white;
+        margin-left:11%;
+        margin-top: 5%;
+        font-size:13px;
+    }
+    #middle{
+        margin-left:-43%;
+        margin-top:-18%;
+        font-size:1.7rem;
+        color:yellow;
+        text-shadow:12px 3px 12px red;
+        text-decoration-color:darkred;
+    }
+    #last{
+        color:white;
+        text-decoration:underline;
+        text-decoration-color: springgreen;
+        transform: rotateZ(-10deg);
+        margin-top:-40%;
+        margin-left:23%;
+        font-size:1.6rem;
+    }
+    h1{
+        font-size:2.5rem;
+    }
+    h4,ul{
+        color:white;
+    }
+    ul{
+        font-size: 1.2rem;
+    }
+    
+    #profile-img{
+        width:100px;
+        height:100px;
+        border-radius:50%;
+        margin-left:12px;
+    }
+    @media screen and (min-width: 1000px){
+    .container{
+        margin-top: -100px;
+    }
+    ul{
+        font-size:1.5rem;
+    }
+    h1{
+        font-size:3.5rem;
+    }
+}
+   </style>
+ </head>
+  <body>
+      
+    <img src="" id="profile-img">
+    <p id="name" style="color:white;font-size:1.5rem;margin-left:18px;"></p>
+       <div class="container">
+          <h1 class="" style="text-align:center;color:yellow;">Instructions:</h1>
+          <hr>
+           <div class="row my-5">
+               <div class="col-12 col-md-12">
+                   <ul style="color:white">
+                       <li>This is a TechQuiz Game where all the questions are related to technology</li>
+                       <li>There is live Scoreboard which get Updated every time you finish a level</li>
+                       <li>You can check your score in Levels Page</li>
+                       <li>Our Game consists of three Categories:
+                           <ol>
+                             <li>Beginner</li>
+                             <li>Intermediate</li>
+                             <li>Advanced</li>
+                           </ol>
+                    </li>
+                    <li>Each Category is Further Divided in several other levels</li>
+                    <li>Each level in a category has some goals</li>
+                    </ul>
+                    <hr>
+                    <p style="color:blue">Let's First Start with <strong>Beginner</strong> Category</p>
+                    <h3 style="text-align: center;color:#FFEB3B;font-weight:800;font-family: sans-serif;">Beginner</h3>
+                    <h4>Brief Summary:</h4>
+                    <ul>
+                        <li>Total Levels:6</li>
+                        <li>Number of Questions(in each level):5</li>
+                        <li>Total Number of Questions:30</li>
+                        <li>Total Starts on take:</li>
+                    </ul>
+                    <hr>
+                    <h3 style="text-align: center;color:#FFEB3B;font-weight:800;font-family: sans-serif;">Intermediate</h3>
+                    <h4 class="">Brief Summary:</h4>
+                    <ul>
+                        <li>Total Levels:6</li>
+                        <li>Number of Questions(in each level):5</li>
+                        <li>Total Number of Questions:30</li>
+                        <li>Total Starts on take:</li>
+                    </ul>
+                    <hr>
+                    <h3 style="text-align: center;color:#FFEB3B;font-weight:800;font-family: sans-serif;">Advanced</h3>
+                    <h4>Brief Summary:</h4>
+                    <ul>
+                        <li>Total Levels:3</li>
+                        <li>Number of Questions(in each level):5</li>
+                        <li>Total Number of Questions:15</li>
+                        <li>Total Starts on take:</li>
+                    </ul>
+                
+               </div>
+           </div>
+           <hr>
+           <div class="row">
+               <div class="col-12 col-md-12">
+                   <h2 style="text-align: center;color:#FFEB3B">Additional Instructions</h2>
+                   <div class="accordion" id="accordionExample" >
+                    <div class="card bg-dark">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" style="color:white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How to Start
+                          </button>
+                        </h2>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body bg-white">
+                         <p>Well,<strong id="name"></strong>TechQuiz|Hub is designed in such a way that anybody can play and have fun,but for user's sake and comfort we will guide you through whenever you are in need</p>
+                         <p>So, Let's Begin Journey to a world of Junkers</p>
+                         <ul>
+                             First Step:<li>Click on the Play Now Button</li>
+                             Second Step:<li>Select the appropriate level according to your knowledge and wish</li>
+                             Third Step:<li>Give Answers for every questions you know</li>
+                             Fourth Step:<li>Finally check your score by clicking on Get Result Button</li>
+                         </ul>
+                         <p>So, simple <button class="btn btn-primary">Yes</button> 
+                            <button class="btn btn-primary">No</button></p>
+                        
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card bg-primary">
+                      <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed"  style="color:white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Have any Doubt
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                          <form>
+                              <div class="form-group">
+                                  <label for="help" style="color:white">Enter Your Doubt</label>
+                                  <textarea class="form-control" id="help" placeholder="Your Doubt"></textarea>
+                              </div>
+                              <button class="btn btn-dark" type="button">Submit</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  </div>
+               </div>
+           </div>
+       </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="../JS/instruction.js"></script>
+    </body>
+</html>

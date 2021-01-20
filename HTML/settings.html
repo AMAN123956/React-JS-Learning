@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/try.css">
+    <!-- Font Awesome CDN-->
+    <script src="https://use.fontawesome.com/2f6bccba41.js"></script>
+    <title>Tech|QuizHub</title>
+  </head>
+  <body>
+   
+    <div class="container-fluid">
+      <span><a href="../index.html"><i class="fa fa-chevron-left" style="color:white;" id="icon" aria-hidden="true"></i></a></span><h1 id="main-heading" style="text-align:center">Settings</h1>
+        <div class="row">
+          <div class="col-12">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                       <i class=""></i><span>My Profile Setting</span>
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <img src="" alt="profile_img" id="profile-img">
+                      <p id="name" style="margin-left:65px;margin-top:10px;">Ninja</p>
+                      <form id="one">      
+                          <select class="form-control" id="avatar">
+                            <option value="../IMG/av1.jpg">Ninja</option>
+                            <option value="../IMG/av2.png">Doremon</option>
+                            <option value="../IMG/av3.png">Knight</option>
+                            <option value="../IMG/av4.jpg">Gamer</option>
+                            <option value="../IMG/av5.jpg">Goku</option>
+                            <option value="../IMG/av6.png">Gentleman</option>
+                            <option value="../IMG/av7.jpg">Stud Guy</option>
+                          </select>    
+                          <div class="form-group">
+                              <label for="username">Username</label>
+                              <input type="text" class="form-control" 
+                              id="username" 
+                              placeholder="Username">
+                          </div> 
+                          <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" class="form-control" 
+                            id="age" 
+                            placeholder="Age">
+                        </div> 
+                        <div class="form-group">
+                          <label for="idea">Tech Knowledge</label>
+                          <input type="range" class="form-control" id="idea">
+                        </div>
+                        <button class="btn btn-dark" type="submit" id="submit_btn">Save</button>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                       Notification Setting
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                         <button class="btn btn-danger" id="on">On</button>
+                         <button class="btn btn-danger" id="off">Off</button>
+                     </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Support
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                       <button class="btn btn-primary" id="privacy-btn">Privacy Policy</button>
+                       <p id="privacy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, optio!</p>
+                       <button class="btn btn-primary" id="problem-btn">Report a Problem</button>
+                       <form id="problem">
+                         <div class="from-group">
+                           <label id="problem-type">Type of Problem</label>
+                           <select id="problem-type" class="form-control">
+                             <option value="">Technical</option>
+                             <option value="">Non-Technical</option>
+                             <option value="">Else</option>
+                           </select>
+                           <label for="problem-statement">Report Your Problem</label>
+                           <textarea class="form-control" id="problem-statement" placeholder="describe your problem"></textarea>
+                         
+                         </div>
+                         <button class="btn btn-warning" type="submit" id="problem-submit-btn">Submit</button>
+                       </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="../JS/try.js"></script>
+    <script src="../JS/next.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/foundation.css">
+
+    <!-- Font Awesome Embed Code-->
+    <script src="https://use.fontawesome.com/2f6bccba41.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Eczar&family=Gentium+Basic&family=Libre+Baskerville&family=Libre+Franklin&family=Proza+Libre&family=Rubik&family=Taviraj&family=Trirong&family=Ubuntu:ital,wght@1,700&family=Work+Sans&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Baloo+Bhaina+2:wght@800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <title>QUIZHUB|AMAN</title>
+    <style>
+        body {
+            background: linear-gradient(to top left, red, white);
+        }
+
+        #circle {
+            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            margin-left: 40%;
+            background-color: #024249;
+            /* background-color:#184d47;*/
+            border: 2px solid skyblue;
+            box-shadow: 3px 3px 10px skyblue;
+        }
+
+        #top {
+            color: white;
+            margin-left: 21%;
+            margin-top: 5%;
+            font-size: 13px;
+        }
+
+        #middle {
+            margin-left: -20%;
+            margin-top: -18%;
+            font-size: 1.7rem;
+            color: yellow;
+            text-shadow: 12px 3px 12px red;
+            text-decoration-color: darkred;
+        }
+
+        #last {
+            color: white;
+            text-decoration: underline;
+            text-decoration-color: springgreen;
+            transform: rotateZ(-10deg);
+            margin-top: -29%;
+            margin-left: 23%;
+            font-size: 1.6rem;
+        }
+
+        .grid-container {
+            border: 2px solid red;
+            box-shadow: 4px 10px 14px white;
+            margin-top: 4%;
+            margin-left: 5%;
+            margin-bottom: 2%;
+            padding: 30px;
+            font-size: 1.4rem;
+            width: 100%;
+
+        }
+
+        h3 {
+            color: blue;
+        }
+
+        p {
+            color: white;
+            font-family: sans-serif;
+        }
+
+        .Button {
+            border: 2px solid black;
+            background-color: white;
+            color: red;
+            width: 30px;
+
+        }
+
+        .Button:hover {
+            cursor: pointer;
+            color: blue;
+            background-color: black;
+        }
+
+        .alert {
+            padding: 15px;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+            color: #3c763d;
+            background-color: #dff0d8;
+        }
+
+        .resultButton,
+        .answerButton,
+        .mainButton {
+            border: 2px solid white;
+            background-color: black;
+            color: white;
+            font-size: 1rem;
+            font-family: sans-serif;
+            border-radius: 5%;
+            padding: 8px;
+            text-align: center;
+            width: 250px;
+            margin-bottom: 2%;
+            margin-top: 4%;
+            margin-left: 70px;
+        }
+
+        .resultButton:hover,
+        .answerButton:hover,
+        .mainButton:hover {
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+        }
+
+        h3 {
+            color: blue;
+            font-weight: 900;
+        }
+
+        p {
+            color: red;
+        }
+
+        @media screen and (max-width:768px) {
+            .grid-container {
+                margin-left: 4%;
+                width: 90%;
+                padding: 5px;
+            }
+
+            #questions {
+                font-size: 1.2rem;
+            }
+
+            .resultButton,
+            .answerButton,
+            .mainButton {
+                max-width: 75%;
+                padding: 0px;
+                margin-left: 8%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cell small-12 medium-12 large-12" id="circle">
+        <p id="top">JUNKERS</p>
+        <p id="middle">MADNESS</p>
+        <p id="last">Quiz</p>
+    </div>
+
+    <div class="grid-container">
+        <div class="inter">
+            <div class="grid-x">
+                <h3 id="levels" style="display:none">five</h3>
+                <div class="cell small-12 medium-12 large-12">
+                    <div id="questions">
+                        <h3>Question: 1</h3>
+                        <p>Generally Which Language is used for construction of webpages</p>
+                        <button class="firstbutton  Button">a</button> .URL<br>
+                        <button class="firstbutton  Button">b</button> .HTML<br>
+                        <button class="firstbutton  Button">c</button> .IRC<br>
+                        <button class="firstbutton  Button">d</button> .NIH<br>
+                    </div>
+                </div>
+                <div class="cell small-12 medium-12 large-12">
+                    <div id="questions">
+                        <h3>Question: 2</h3>
+                        <p>Which of the following is not a mandatory component of URL</p>
+                        <button class=" secondbutton Button">a</button> .Resource Path<br>
+                        <button class=" secondbutton Button">b</button> .Protocol<br>
+                        <button class=" secondbutton Button">c</button> .None of these<br>
+                        <button class=" secondbutton Button">d</button> .Port Number<br>
+                    </div>
+                </div>
+                <div class="cell small-12 medium-12 large-12">
+                    <div id="questions">
+                        <h3>Question: 3</h3>
+                        <p>Where are the cookies stored?</p>
+                        <button class=" thirdbutton Button">a</button> .On client-side<br>
+                        <button class=" thirdbutton Button">b</button> .In HTMl<br>
+                        <button class=" thirdbutton Button">c</button> .In web.xml<br>
+                        <button class=" thirdbutton Button">d</button> .None of these<br>
+                    </div>
+                </div>
+                <div class="cell small-12 medium-12 large-12">
+                    <div id="questions">
+                        <h3>Question: 4</h3>
+                        <p>Data moves through the network in a structure called.......</p>
+                        <button class=" fifthbutton Button">a</button> .Packets<br>
+                        <button class=" fifthbutton Button">b</button> .Payloads<br>
+                        <button class=" fifthbutton Button">c</button> .Payback<br>
+                        <button class=" fifthbutton Button">d</button> .Datagram<br>
+                    </div>
+                </div>
+                <div class="cell small-12 medium-12 large-12">
+                    <div id="questions">
+                        <h3>Question: 5</h3>
+                        <p>Which of the following is not one of the early "protocols," or ways to use the Internet?</p>
+                        <button class=" fourthbutton Button">a</button> .Blogging<br>
+                        <button class=" fourthbutton Button">b</button> .FTP<br>
+                        <button class=" fourthbutton Button">c</button> .Telnet<br>
+                        <button class=" fourthbutton Button">d</button> .Gopher<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-x">
+        <div class="cell small-12 medium-4">
+            <div class="resultButton"><a href="#">Get Result</a></div>
+        </div>
+        <div class="cell small-12 medium-4">
+            <div class="answerButton"><a href="intermediate.html">Main Menu</a></div>
+        </div>
+        <div class="cell small-12 medium-4">
+            <div class="mainButton"><a href="#">Get Answers</a></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="../../JS/INTERMEDIATE/intermediate2.js"></script>
+    <script src="../../JS/INTERMEDIATE/inew.js"></script>
+
+
+</body>
+
+</html>
