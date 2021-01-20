@@ -1,7 +1,8 @@
 let answer = ["b", "c", "d", "a", "a", "a"];
 let score1 = 0;
-
 let stars1 = 0;
+let selectedOption = ["o", "o", "o", "o", "o"];
+let correctAnswer = ["d", "d", "a", "c", "b"];
 let level = document.getElementById("levels").innerHTML;
 var numberOfButton = 4;
 const firstbutton = document.querySelectorAll(".firstbutton");
@@ -12,21 +13,18 @@ const fifthbutton = document.querySelectorAll(".fifthbutton");
 for (var i = 0; i < numberOfButton; i++) {
 
     document.querySelectorAll(".firstbutton")[i].addEventListener("click", function() {
-      
       var buttonInnerHTML = this.innerHTML;
       console.log(buttonInnerHTML);
-        if(buttonInnerHTML === "d"){
-            score1++;
-          stars1 += 3;   
-          for (let i = 0; i < 4; i++) firstbutton[i].style.background = "white";
-          firstbutton[i].style.background = "green";
-        }
-        else{
-         score1--;
-          stars1 += 0;
-          for (let i = 0; i < 4; i++) firstbutton[i].style.background = "white";
-          firstbutton[i].style.background = "red";
-        }
+      for (let j = 0; j < 4; j++){
+        firstbutton[j].style.background = "white";
+      }
+        firstbutton[i].style.background = "yellow";
+          if(buttonInnerHTML === "d"){
+             selectedOption[0] = this.innerHTML;
+          }
+          else{
+             selectedOption[0] = this.innerHTML;
+          }
        
     });
 
@@ -35,77 +33,61 @@ for (var i = 0; i < numberOfButton; i++) {
   
         var buttonInnerHTML = this.innerHTML;
         console.log(buttonInnerHTML);
-          if(buttonInnerHTML === "d"){
-              
-              score1++;
-            stars1 += 3;       
-            for (let i = 0; i < 4; i++) secondbutton[i].style.background = "white";
-            secondbutton[i].style.background = "green";
-          }
-          else{
-           score1--; 
-           stars1 += 0;
-           for (let i = 0; i < 4; i++) secondbutton[i].style.background = "white";
-            secondbutton[i].style.background = "red";
-          }
-         
+        for (let j = 0; j < 4; j++){
+          secondbutton[j].style.background = "white";
+        }
+         secondbutton[i].style.background = "yellow";
+         if(buttonInnerHTML === "d"){
+               selectedOption[1] = this.innerHTML;
+            }
+            else{
+              selectedOption[1] = this.innerHTML;
+            }
           
       });
 
       document.querySelectorAll(".thirdbutton")[i].addEventListener("click", function() {
-  
+        for (let j = 0; j < 4; j++){
+          thirdbutton[j].style.background = "white";
+        }
+          thirdbutton[i].style.background = "yellow";
         var buttonInnerHTML = this.innerHTML;
         console.log(buttonInnerHTML);
           if(buttonInnerHTML === "a"){
-              score1++;
-              stars1 += 3;
-              for (let i = 0; i < 4; i++) thirdbutton[i].style.background = "white";
-              thirdbutton[i].style.background = "green";
+             selectedOption[2] = this.innerHTML;
           }
           else{
-            score1--; 
-            stars1 += 0;
-            for (let i = 0; i < 4; i++) thirdbutton[i].style.background = "white";
-            thirdbutton[i].style.background = "red";
-          }
-         
+            selectedOption[2] = this.innerHTML;
+        }
       });
       document.querySelectorAll(".fourthbutton")[i].addEventListener("click", function() {
-  
-        var buttonInnerHTML = this.innerHTML;
-        console.log(buttonInnerHTML);
-          if(buttonInnerHTML === "c"){
-              score1++;
-              stars1 += 3;
-              for (let i = 0; i < 4; i++) fourthbutton[i].style.background = "white";
-              fourthbutton[i].style.background = "green";          
-          }
-          else{
-            score1--; 
-            stars1 += 0;
-            for (let i = 0; i < 4; i++) fourthbutton[i].style.background = "white";
-            fourthbutton[i].style.background = "red";
-          }
-         
+        for (let j = 0; j < 4; j++){
+          fourthbutton[j].style.background = "white";
+        }
+          fourthbutton[i].style.background = "yellow";
+            var buttonInnerHTML = this.innerHTML;
+            console.log(buttonInnerHTML);
+              if(buttonInnerHTML === "c"){
+                  selectedOption[3] = this.innerHTML;
+              }
+              else{
+                  selectedOption[3] = this.innerHTML;
+              }
       });
       document.querySelectorAll(".fifthbutton")[i].addEventListener("click", function() {
-  
+        for (let j = 0; j < 4; j++){
+          fifthbutton[j].style.background = "white";
+        }
+          fifthbutton[i].style.background = "yellow";
         var buttonInnerHTML = this.innerHTML;
         console.log(buttonInnerHTML);
-          if(buttonInnerHTML === "b"){
-              score1++;
-              stars1 += 3;
-              for (let i = 0; i < 4; i++) fifththbutton[i].style.background = "white";
-              fifthhbutton[i].style.background = "green";
+          if(buttonInnerHTML === "a"){
+             selectedOption[4] = this.innerHTML;
           }
           else{
-            score1--; 
-            stars1 += 0;
-            for (let i = 0; i < 4; i++) fifththbutton[i].style.background = "white";
-            fifthhbutton[i].style.background = "red";
+            selectedOption[4] = this.innerHTML;
           }
-         
-      });
+       });
    
     
 }
@@ -117,7 +99,12 @@ let astars2=0;
 let astars3=0;
 document.querySelector(".resultButton").addEventListener("click", function() {
   state=1;
-  
+  for (let i = 0; i < 5; i++){
+    if (selectedOption[i] == correctAnswer[i]) {
+      score1 += 1;
+      stars1 += 3;
+    }
+  }  
   alert("Your Score is: " + score1 + " and you have earned " + stars1 +" 🌟🌟");
   document.querySelector(".inter").innerHTML = " Your Score is " + score1 + " You have earned 🌟🌟 " + stars1 ;
   document.querySelector(".inter").style.color="white";
