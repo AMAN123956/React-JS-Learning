@@ -1,2 +1,2 @@
-# React-JS-Learning
-Repository to keep track of all React Framework  Learning
+# Tech-Quest 
+A platform to test how much tech-knowledge do you have?
