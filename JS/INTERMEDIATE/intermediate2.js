@@ -9,21 +9,22 @@ const thirdbutton = document.querySelectorAll(".thirdbutton");
 const fourthbutton = document.querySelectorAll(".fourthbutton");
 const fifthbutton = document.querySelectorAll(".fifthbutton");
 var numberOfButton = 4;
-for (var i = 0; i < numberOfButton; i++) {
-
+for (let i = 0; i < numberOfButton; i++) {
+    
     document.querySelectorAll(".firstbutton")[i].addEventListener("click", function() {
       for (let j = 0; j < 4; j++){
         firstbutton[j].style.background = "white";
       }
-        firstbutton[i].style.background = "yellow";
-      var buttonInnerHTML = this.innerHTML;
-      console.log(buttonInnerHTML);
-        if(buttonInnerHTML === "b"){
-          selectedOption[0] = this.innerHTML;
-        }
-        else{
-          selectedOption[0] = this.innerHTML;
-        }       
+      firstbutton[i].style.background = "yellow";
+        var buttonInnerHTML = this.innerHTML;
+        console.log(buttonInnerHTML);
+          if(buttonInnerHTML === "b"){
+             selectedOption[0] = this.innerHTML;
+          }
+          else{
+             selectedOption[0] = this.innerHTML;
+          }
+          
     });
 
 
